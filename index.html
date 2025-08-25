@@ -6,58 +6,111 @@
   <title>Keya Khandelwal — Portfolio</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="manifest" href="site.webmanifest">
-  <meta name="theme-color" content="#0b1220" />
+  <meta name="theme-color" content="#ffffff" />
   <link href="styles.css" rel="stylesheet" />
   <script defer src="script.js"></script>
 </head>
 <body>
-  <header>
-    <h1>Keya Khandelwal</h1>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#experience">Experience</a>
-      <a href="#projects">Projects</a>
-      <a href="#skills">Skills</a>
-      <a href="#contact">Contact</a>
-    </nav>
+  <header class="site-header">
+    <div class="container nav">
+      <h1 class="logo">Keya <span>Khandelwal</span></h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main>
-    <section id="about">
+    <section class="hero container">
+      <div class="hero-text">
+        <h2>Hi, I'm <span class="accent">Keya</span> 👋</h2>
+        <p>
+          Software Developer experienced in ServiceNow, full-stack web apps, and automation.
+          I build reliable workflows, REST APIs, and intuitive experiences.
+        </p>
+        <div class="cta">
+          <a class="btn primary" href="mailto:keya09.khandelwal@gmail.com">Email Me</a>
+          <a class="btn secondary" href="assets/Keya_Khandelwal_Resume.pdf" download>Download Résumé</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="container section">
       <h2>About</h2>
-      <p>Software Developer with ServiceNow, web apps, and automation expertise. Passionate about building user‑friendly workflows.</p>
+      <p>
+        I’m passionate about automation and creating user-friendly software. At Deloitte USI,
+        I optimized HR Payroll case workflows and enhanced the Employee Center portal to improve self-service.
+      </p>
     </section>
 
-    <section id="experience">
+    <section id="experience" class="container section">
       <h2>Experience</h2>
-      <p>Deloitte USI — Software Developer (2024 – Present)</p>
-      <p>Deloitte USI — Winter Intern (2024)</p>
-      <p>Becton Dickinson — Summer Intern (2023)</p>
+      <div class="card-grid">
+        <div class="card">
+          <h3>Deloitte USI</h3>
+          <p><strong>Software Developer</strong> · 2024 – Present</p>
+          <ul>
+            <li>Built HR Payroll workflows in ServiceNow cutting manual work by 80%.</li>
+            <li>Enhanced Employee Center for case tracking and knowledge access.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Deloitte USI</h3>
+          <p><strong>Winter Intern</strong> · 2024</p>
+          <ul>
+            <li>Configured ITSM modules to automate enterprise workflows.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Becton Dickinson</h3>
+          <p><strong>Summer Intern</strong> · 2023</p>
+          <ul>
+            <li>Developed Flutter prototype reducing medication errors by 70%.</li>
+          </ul>
+        </div>
+      </div>
     </section>
 
-    <section id="projects">
+    <section id="projects" class="container section">
       <h2>Projects</h2>
-      <ul>
-        <li>AI‑Powered Virtual Assistant (ServiceNow + GPT)</li>
-        <li>YOLODonate — Real‑time donation recognition app</li>
-        <li>EduBridge — Real‑time transcription & translation platform</li>
-      </ul>
+      <div class="card-grid">
+        <div class="card">
+          <h3>AI-Powered Virtual Assistant</h3>
+          <p>Voice chat assistant integrated with ServiceNow via REST to auto-create IT tickets.</p>
+        </div>
+        <div class="card">
+          <h3>YOLODonate</h3>
+          <p>MERN app with YOLOv5 for real-time donation recognition and categorization.</p>
+        </div>
+        <div class="card">
+          <h3>EduBridge</h3>
+          <p>Education platform with real-time transcription and multilingual support.</p>
+        </div>
+      </div>
     </section>
 
-    <section id="skills">
+    <section id="skills" class="container section">
       <h2>Skills</h2>
-      <p>React, Node.js, REST APIs, ServiceNow, Flutter, Python, C++, SQL</p>
+      <div class="tags">
+        <span>HTML</span><span>CSS</span><span>JavaScript</span><span>React</span><span>Node.js</span>
+        <span>ServiceNow</span><span>Python</span><span>C++</span><span>SQL</span>
+      </div>
     </section>
 
-    <section id="contact">
+    <section id="contact" class="container section">
       <h2>Contact</h2>
       <p>Email: <a href="mailto:keya09.khandelwal@gmail.com">keya09.khandelwal@gmail.com</a></p>
       <p>LinkedIn: <a href="https://www.linkedin.com/in/keya09" target="_blank">linkedin.com/in/keya09</a></p>
-      <p><a href="assets/Keya_Khandelwal_Resume.pdf" download>Download Résumé</a></p>
     </section>
   </main>
 
-  <footer>
+  <footer class="site-footer">
     <p>© <span id="year"></span> Keya Khandelwal</p>
   </footer>
 </body>
